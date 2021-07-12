@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.abspath("../../src"))
 sys.path.append(os.path.abspath("./demo/"))
 
 project = "sphinx-benjcunningham-theme"
-copyright = "{}, {}.".format(datetime.datetime.now().year, Ben Cunningham)
+copyright = "{}, {}.".format(datetime.datetime.now().year, "Ben Cunningham")
 author = "Ben Cunningham"
 
 extensions = [
