@@ -13,7 +13,7 @@ else
 endif
 
 gh-pages:
-	utils/gh-pages.sh
+	.ci/gh-pages.sh
 
 install:
 	pip install -e ".[dev]"
