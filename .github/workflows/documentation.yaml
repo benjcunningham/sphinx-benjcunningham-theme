@@ -1,0 +1,21 @@
+name: documentation
+on:
+  push:
+    branches:
+    - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: "3.8"
+    - name: Install library
+      run: make install
+    - name: Configure Git
+      run: .ci/git-config.sh
+    - name: Build and deploy
+      run: make gh-pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
