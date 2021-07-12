@@ -1,0 +1,238 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>sphinx-benjcunningham-theme &mdash; sphinx-benjcunningham-theme  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Structural Elements" href="demo/structure.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+  
+
+
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+<a href="#" class="icon icon-home">
+  <img src="_static/logo.svg" class="logo" alt="Logo"/>
+  <div class="title">sphinx-benjcunningham-theme</div>
+</a>
+
+
+<div class="version" style="position: relative; z-index: 2;">
+  <div class="current">master</div>
+  <div class="options">
+    <ul>
+      <li class="selected"><a href="index.html">master</a></li>
+    </ul>
+  </div>
+</div>
+
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div>
+
+        
+
+  
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Demo Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="demo/structure.html">Structural Elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo/structure.html#structural-elements-2">Structural Elements 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo/demo.html">Paragraph Level Markup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo/api.html">API documentation and generated content</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+
+  <div class="wy-side-nav-footer">&copy;2021, Ben Cunningham.
+  </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">sphinx-benjcunningham-theme</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>sphinx-benjcunningham-theme</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sphinx-benjcunningham-theme">
+<h1>sphinx-benjcunningham-theme<a class="headerlink" href="#sphinx-benjcunningham-theme" title="Permalink to this headline">¶</a></h1>
+<p>Custom Sphinx theme baed on the ubiquitous <a class="reference external" href="https://github.com/readthedocs/sphinx_rtd_theme">Read the Docs</a> theme. It overrides the Read the
+Docs theme with custom components and styles.</p>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Install the theme by adding the following to your library’s <code class="docutils literal notranslate"><span class="pre">setup.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span>
+
+
+<span class="n">extras</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="o">...</span>
+    <span class="s2">&quot;docs&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;sphinx_benjcunningham_theme @ https://github.com/benjcunningham/sphinx-benjcunningham-theme&quot;</span><span class="p">,</span>
+    <span class="p">],</span>
+<span class="p">}</span>
+
+<span class="n">setup</span><span class="p">(</span>
+    <span class="o">...</span>
+    <span class="n">extras_require</span><span class="o">=</span><span class="n">extras</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>In your Sphinx <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>, make sure to include the following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="o">...</span>
+    <span class="s2">&quot;sphinx_benjcunningham_theme&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;sphinx_benjcunningham_theme&quot;</span>
+</pre></div>
+</div>
+<p>Either build the documentation from your current branch using a tradition Sphinx build
+script, or build a versioned site using the following:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-multiversion docs/source docs/build
+</pre></div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  <div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+    <a href="demo/structure.html" class="btn btn-neutral float-right" title="Structural Elements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
