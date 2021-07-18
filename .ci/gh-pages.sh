@@ -25,8 +25,10 @@ if [ "${GIT_CURRENT_BRANCH}" = "master" ]; then
     popd
 
     if [ -z $(git branch -a | grep gh-pages) ]; then
+        echo "Creating orphan branch gh-pages"
         git checkout --orphan gh-pages
     else
+        echo "Checking out existing branch gh-pages"
         git checkout -t origin/gh-pages
     fi
 
