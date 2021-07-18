@@ -24,6 +24,8 @@ if [ "${GIT_CURRENT_BRANCH}" = "master" ]; then
     tar -czf /tmp/html.tgz .
     popd
 
+    git fetch
+
     if [ -z $(git branch -a | grep gh-pages) ]; then
         echo "Creating orphan branch gh-pages"
         git checkout --orphan gh-pages
