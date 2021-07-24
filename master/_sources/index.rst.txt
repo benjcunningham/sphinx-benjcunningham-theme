@@ -2,7 +2,7 @@
 sphinx-benjcunningham-theme
 ***************************
 
-Custom Sphinx theme baed on the ubiquitous `Read the Docs
+Custom Sphinx theme based on the ubiquitous `Read the Docs
 <https://github.com/readthedocs/sphinx_rtd_theme>`_ theme. It overrides the Read the
 Docs theme with custom components and styles.
 
