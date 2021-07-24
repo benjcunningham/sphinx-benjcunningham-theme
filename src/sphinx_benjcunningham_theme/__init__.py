@@ -11,7 +11,6 @@ def builder_inited(app):
     static_path = os.path.join(get_html_theme_path(), "static")
 
     app.config.html_static_path.append(static_path)
-    app.config.html_logo = "logo.svg"
 
 
 def setup(app):
